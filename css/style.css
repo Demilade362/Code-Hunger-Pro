@@ -1,0 +1,15 @@
+.skill {
+  text-align: center;
+}
+
+.skill img {
+  display: block;
+  margin: 0 auto;
+}
+
+.skill-title {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}

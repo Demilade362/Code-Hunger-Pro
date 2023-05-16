@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oluwademilade Abatan</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script defer src="./css/bootstrap.min.css"></script>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeHunger</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="bg-light">
+    <main>
+        <nav class="navbar navbar-expand-sm bg-white navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="#"><code>&lt;CodeHunger/&gt;</code></a>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link active">Skills</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link active">About Me</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link active">Projects</a></li>
+                    <li class="nav-item mx-5"><a href="#" class="btn btn-outline-primary rounded-pill">Say Hello</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+            <section class="row p-5 mt-5 align-items-center justify-content-between">
+                <div class="col-lg-6">
+                    <h1 class="display-4">Hello, I'm Oluwademilade</h1>
+                    <p class="lead">A passionate Backend Web developer</p>
+                    <div>
+                        <h5>My Skills: <span class="typewriter" id="typewriter" class="lead"></span></h5>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <img src="./images/me.jpg" class="img-fluid rounded-circle" alt="Oluwademilade" width="250"
+                        height="250">
+                </div>
+            </section>
+
+            <section class="bg-white my-5">
+                <div class="container p-5" id="skills">
+                    <h1 class="text-center display-4">My Skills</h1>
+                    <div class="row mt-5">
+                        <div class="col-lg-4 wow fadeInDown">
+                            <div class="skill">
+                                <img src="./images/HTML5_Logo.svg" alt="HTML Logo" height="100">
+                                <h5 class="skill-title">HTML</h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 wow fadeInDown">
+                            <div class="skill">
+                                <img src="./images/CSS3_logo_and_wordmark.svg" alt="CSS Logo" height="100">
+                                <h5 class="skill-title">CSS</h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 wow fadeInDown">
+                            <div class="skill">
+                                <img src="./images/logo-javascript.svg" alt="JavaScript Logo" height="100">
+                                <h5 class="skill-title">JavaScript</h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 wow slideInLeft mt-5">
+                            <div class="skill">
+                                <img src="./images/jquery.svg" alt="HTML Logo" height="100">
+                                <h5 class="skill-title">Jquery</h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 wow pulse mt-5">
+                            <div class="skill">
+                                <img src="./images/php.svg" alt="CSS Logo" height="100">
+                                <h5 class="skill-title">PHP</h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 wow slideInRight mt-5">
+                            <div class="skill">
+                                <img src="./images/mysql.svg" alt="JavaScript Logo" height="100">
+                                <h5 class="skill-title">MySql</h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 wow slideInLeft mt-5">
+                            <div class="skill">
+                                <img src="./images/laravel.svg" alt="JavaScript Logo" height="100">
+                                <h5 class="skill-title">Laravel</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+    </main>
+    <script src="javascript/jquery.js"></script>
+    <script src="javascript/wow.js"></script>
+    <script src="./typer/jquery.typer.js"></script>
+    <script src="javascript/app.js"></script>
+    <script>
+        wow = new WOW(
+            {
+                animateClass: 'animated',
+                offset: 100,
+                callback: function (box) {
+                    console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+                }
+            }
+        );
+        wow.init();
+    </script>
+</body>
+
+</html>
