@@ -11,5 +11,15 @@
   margin-top: 1rem;
   font-size: 1.5rem;
   font-weight: bold;
-  color: #333;
+  /* color: #333; */
+}
+
+#banner {
+  margin: 8rem 0;
+}
+
+@media screen and (max-width: 624px) {
+  #banner {
+    margin: 5rem 0;
+  }
 }

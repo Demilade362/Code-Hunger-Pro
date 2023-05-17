@@ -4,7 +4,7 @@ $(document).ready(function () {
     wow = new WOW(
         {
             animateClass: 'animated',
-            offset: 100,
+            offset: 250,
             callback: function (box) {
                 console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
             }
@@ -12,3 +12,6 @@ $(document).ready(function () {
     );
     wow.init();
 });
+
+const date = document.querySelector('#date');
+date.innerHTML = new Date().getFullYear();
