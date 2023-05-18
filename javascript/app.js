@@ -12,6 +12,3 @@ $(document).ready(function () {
     );
     wow.init();
 });
-
-const date = document.querySelector('#date');
-date.innerHTML = new Date().getFullYear();
