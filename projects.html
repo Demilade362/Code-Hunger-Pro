@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&lt;CodeHunger/&gt;</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script defer src="./js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="bg-dark text-light">
+    <main>
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#"><code>&lt;Code<span class="text-warning">Hunger/&gt;</span></code></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                    <i class="navbar-toggler-icon"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navmenu">
+                    <ul class="navbar-nav ms-lg-auto ms-md-auto nav-underline">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="./index.html#skills" class="nav-link">Skills</a></li>
+                        <li class="nav-item"><a href="./index.html#about" class="nav-link">About Me</a></li>
+                        <li class="nav-item"><a href="./projects.html" class="nav-link active">Projects</a></li>
+                        <li class="nav-item ms-lg-5 mt-1"><a href="#" class="btn btn-outline-warning rounded-pill">Say
+                                Hello</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section class="projects" style="margin: 5rem 0">
+            <div class="container">
+                <h2 class="section-title text-center" style="margin: 3rem 0 2rem 0">My Projects</h2>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="project wow fadeInUp">
+                            <img src="./images/pizzahouse(1).jpeg" alt="Project 1">
+                            <div class="project-details">
+                                <h3 class="project-title">Project 1</h3>
+                                <p class="project-description">Description of Project 1</p>
+                                <a href="#" class="project-link">View Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="project wow fadeInUp">
+                            <img src="./images/booking.jpeg" alt="Project 2">
+                            <div class="project-details">
+                                <h3 class="project-title">Ticket Booking System</h3>
+                                <p class="project-description">The Project is a ticket booking system for transportation
+                                    system</p>
+                                <a href="#" class="project-link">View Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="project wow fadeInUp">
+                            <img src="./images/pizzahouse(2).jpeg" alt="Project 3">
+                            <div class="project-details">
+                                <h3 class="project-title">Project 3</h3>
+                                <p class="project-description">Description of Project 3</p>
+                                <a href="#" class="project-link">View Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="project wow fadeInUp">
+                            <img src="./images/news.jpeg" alt="Project 3">
+                            <div class="project-details">
+                                <h3 class="project-title">WyteNews Project</h3>
+                                <p class="project-description">Description of Project 3</p>
+                                <a href="#" class="project-link">View Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="project wow fadeInUp">
+                            <img src="./images/ebook.jpeg" alt="Project 3">
+                            <div class="project-details">
+                                <h3 class="project-title">Ebook Project</h3>
+                                <p class="project-description">This is Just a Landing Page for Ebook company. I just use
+                                    it for practice</p>
+                                <a href="#" class="project-link">View Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="javascript/jquery.js"></script>
+    <script src="javascript/wow.js"></script>
+    <script src="./typer/jquery.typer.js"></script>
+    <script src="javascript/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var grid = document.querySelector('.projects .row');
+            var masonry = new Masonry(grid, {
+                itemSelector: '.col-lg-4',
+                columnWidth: '.col-lg-4',
+                percentPosition: true
+            });
+        });
+    </script>
+</body>
+
+</html>

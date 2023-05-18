@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>&lt;CodeHunger/&gt;</title>
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <script defer src="./js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script defer src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="bg-dark text-light">
@@ -25,7 +25,7 @@
                         <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
                         <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
                         <li class="nav-item"><a href="#about" class="nav-link">About Me</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Projects</a></li>
+                        <li class="nav-item"><a href="./projects.html" class="nav-link">Projects</a></li>
                         <li class="nav-item ms-lg-5 mt-1"><a href="#" class="btn btn-outline-warning rounded-pill">Say
                                 Hello</a>
                         </li>
@@ -36,9 +36,7 @@
         <div class="container">
             <section class="row align-items-center justify-content-between p-4" id="banner">
                 <div class="col-lg-6 col-sm-12 text-sm-center">
-                    <h1 class="display-4">Hello, <span class="text-warning">
-                            I'm Oluwademilade
-                        </span></h1>
+                    <h1 class="display-4">Hello, <span class="text-warning">I'm Oluwademilade</span></h1>
                     <p class="lead">A passionate Backend Web developer</p>
                     <div>
                         <h5>My Skills: <span class="typewriter" id="typewriter" class="lead"></span></h5>
@@ -51,75 +49,91 @@
             </section>
 
             <div class="container">
-                <section class="bg-dark style=" margin-top: 8rem;">
-                    <div id="skills">
-                        <h1 class="text-center display-4">My Skills</h1>
-                        <div class="row mt-5 justify-content-around">
-                            <div class="col-lg-4 col-sm-4 wow fadeInDown mb-5">
-                                <div class="skill">
-                                    <img src="./images/HTML5_Logo.svg" alt="HTML Logo" height="100">
-                                    <h5 class="skill-title">HTML</h5>
+                <section class="bg-dark" id="skills">
+                    <div class="container py-5">
+                        <h1 class="text-center display-4 mb-5">My Skills</h1>
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center">
+                            <div class="col">
+                                <div class="card h-100 border-0 bg-transparent wow fadeInDown">
+                                    <img src="./images/HTML5_Logo.svg" alt="HTML Logo" class="card-img-top p-4">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">HTML</h5>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-sm-4 wow fadeInDown mb-5">
-                                <div class="skill">
-                                    <img src="./images/CSS3_logo_and_wordmark.svg" alt="CSS Logo" height="100">
-                                    <h5 class="skill-title">CSS</h5>
+                            <div class="col">
+                                <div class="card h-100 border-0 bg-transparent wow fadeInDown">
+                                    <img src="./images/CSS3_logo_and_wordmark.svg" alt="CSS Logo"
+                                        class="card-img-top p-4">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">CSS</h5>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-sm-4 wow fadeInDown mb-5">
-                                <div class="skill">
-                                    <img src="./images/logo-javascript.svg" alt="JavaScript Logo" height="100">
-                                    <h5 class="skill-title">JavaScript</h5>
+                            <div class="col">
+                                <div class="card h-100 border-0 bg-transparent wow fadeInDown">
+                                    <img src="./images/logo-javascript.svg" alt="JavaScript Logo"
+                                        class="card-img-top p-4">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">JavaScript</h5>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-sm-4 wow fadeInDown mb-5">
-                                <div class="skill">
-                                    <img src="./images/jquery.svg" alt="HTML Logo" height="100">
-                                    <h5 class="skill-title">Jquery</h5>
+                            <div class="col">
+                                <div class="card h-100 border-0 bg-transparent wow fadeInDown">
+                                    <img src="./images/jquery.svg" alt="JQuery Logo" class="card-img-top p-4">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">jQuery</h5>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-sm-4 wow pulse mb-5">
-                                <div class="skill">
-                                    <img src="./images/php.svg" class="rounded-circle" alt="CSS Logo" height="100">
-                                    <h5 class="skill-title">PHP</h5>
+                            <div class="col">
+                                <div class="card h-100 border-0 bg-transparent wow pulse">
+                                    <img src="./images/php.svg" alt="PHP Logo" class="card-img-top p-4">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">PHP</h5>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-sm-4 wow fadeInDown mb-5">
-                                <div class="skill">
-                                    <img src="./images/mysql.svg" class="rounded-circle" alt="JavaScript Logo"
-                                        height="100">
-                                    <h5 class="skill-title">MySql</h5>
+                            <div class="col">
+                                <div class="card h-100 border-0 bg-transparent wow fadeInDown">
+                                    <img src="./images/mysql.svg" alt="MySQL Logo" class="card-img-top p-4">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">MySQL</h5>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-sm-4 wow fadeInDown mb-5">
-                                <div class="skill">
-                                    <img src="./images/laravel.svg" class="rounded-circle" alt="JavaScript Logo"
-                                        height="100">
-                                    <h5 class="skill-title">Laravel</h5>
+                            <div class="col">
+                                <div class="card h-100 border-0 bg-transparent wow fadeInDown">
+                                    <img src="./images/laravel.svg" alt="Laravel Logo" class="card-img-top p-4">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">Laravel</h5>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
-                <section class="mb-5 p-lg-5 wow fadeInUp" style="margin-top: 3rem;">
-                    <div class="p-5" id="about">
-                        <div class="display-5 text-lg-start text-sm-center">
+                <section class="mb-5 p-lg-5 wow fadeInUp" id="about">
+                    <div class="container">
+                        <div class="display-5 text-center">
                             <span class="text-warning">About</span> Me
                         </div>
-                        <p class="lead my-5">
-                            My Name is Oluwademilade Abatan Ademola, Am a Backend Developer.
-                            Born May 11th 2004 in Lagos, Nigeria. My aim of been a backend developer to help Companies
-                            Make
-                            Productive Backend And Apis and Change the world and make it a better place via technology.
+                        <p class="lead my-5 text-center">
+                            My name is Oluwademilade Abatan Ademola, and I am a Backend Developer.
+                            I was born on May 11th, 2004 in Lagos, Nigeria. My aim as a backend developer is to help
+                            companies
+                            create productive backend systems and APIs to change the world and make it a better place
+                            through technology.
                         </p>
                     </div>
                 </section>
             </div>
+        </div>
     </main>
-    <footer class="mt-5 w-100">
-        <div class="container text-center p-5">
-            <span class="lead">Copyright &copy; <span id="date"></span> Oluwademilade Abatan</span>
+    <footer class="mt-5 bg-dark text-light">
+        <div class="container text-center py-5">
+            <span class="lead">&copy; <span id="date"></span> Oluwademilade Abatan</span>
         </div>
     </footer>
     <script src="javascript/jquery.js"></script>
