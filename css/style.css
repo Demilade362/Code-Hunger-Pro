@@ -41,7 +41,8 @@
   }
 
   .project-details {
-    background-color: #fff;
+    background-color: #000;
+    color: #fff;
     padding: 20px;
     position: absolute;
     bottom: 0;
@@ -58,12 +59,12 @@
   .project-title {
     margin-top: 0;
     font-size: 18px;
-    color: #333;
+    color: #eee;
   }
 
   .project-description {
     margin-bottom: 0;
-    color: #777;
+    color: #fff;
   }
 
   #banner {
