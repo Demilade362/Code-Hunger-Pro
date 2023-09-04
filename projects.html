@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <script defer src="./js/bootstrap.min.js"></script>
-    <script src="/node_modules/masonry-layout/dist/masonry.pkgd.min.js"></script>
+    <script src="node_modules/masonry-layout/dist/masonry.pkgd.min.js"></script>
+    <!-- <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script> -->
 </head>
 
 <body class="bg-dark text-light">
@@ -60,7 +61,7 @@
             <div class="container">
                 <h2 class="section-title text-center mb-lg-5 mb-sm-2">My Projects</h2>
                 <div class="row">
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4">
                         <div class="project wow fadeInUp">
                             <img src="./images/pizzahouse(1).jpeg" alt="Project 1">
                             <div class="project-details">
@@ -71,7 +72,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4">
                         <div class="project wow fadeInUp">
                             <img src="./images/booking.jpeg" alt="Project 2">
                             <div class="project-details">
@@ -83,7 +84,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4">
                         <div class="project wow fadeInUp">
                             <img src="./images/pizzahouse(2).jpeg" alt="Project 3">
                             <div class="project-details">
@@ -94,7 +95,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4">
                         <div class="project wow fadeInUp">
                             <img src="./images/news.jpeg" alt="Project 4">
                             <div class="project-details">
@@ -105,7 +106,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4">
                         <div class="project wow fadeInUp">
                             <img src="./images/ebook.jpeg" alt="Project 5">
                             <div class="project-details">
@@ -117,7 +118,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4">
                         <div class="project wow fadeInUp">
                             <img src="./images/crm.png" alt="Project 6">
                             <div class="project-details">
@@ -129,7 +130,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4">
                         <div class="project wow fadeInUp">
                             <img src="./images/JustLol.jpg" alt="Project 7">
                             <div class="project-details">
@@ -141,7 +142,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4">
                         <div class="project wow fadeInUp">
                             <img src="./images/TodoList-Web.jpg" alt="Project 8">
                             <div class="project-details">
@@ -155,7 +156,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4">
                         <div class="project wow fadeInUp">
                             <img src="./images/time.jpg" alt="Project 9">
                             <div class="project-details">
@@ -168,7 +169,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4">
                         <div class="project wow fadeInUp">
                             <img src="./images/Random-Number-Generator.jpg" alt="Project 10">
                             <div class="project-details">
@@ -204,14 +205,22 @@
     <script src="./typer/jquery.typer.js"></script>
     <script src="javascript/app.js"></script>
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
+        // document.addEventListener("DOMContentLoaded", function () {
+        //     var grid = document.querySelector('.projects .row');
+        //     var masonry = new Masonry(grid, {
+        //         itemSelector: '.col-lg-4',
+        //         columnWidth: '.col-lg-4',
+        //         percentPosition: true
+        //     });
+        // });
+        window.onload = function () {
             var grid = document.querySelector('.projects .row');
             var masonry = new Masonry(grid, {
                 itemSelector: '.col-lg-4',
                 columnWidth: '.col-lg-4',
                 percentPosition: true
             });
-        });
+        };
     </script>
 </body>
 
