@@ -1,126 +1,132 @@
-  .card-img-top {
-    max-height: 150px;
-    object-fit: contain;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-  .skill {
-    text-align: center;
-  }
+* {
+  font-family: Poppins;
+}
 
-  .skill img {
-    display: block;
-    margin: 0 auto;
-  }
+.card-img-top {
+  max-height: 150px;
+  object-fit: contain;
+}
 
-  .skill-title {
-    margin-top: 1rem;
-    font-size: 1.5rem;
-    font-weight: bold;
-    /* color: #333; */
-  }
+.skill {
+  text-align: center;
+}
 
-  .projects .row {
-    margin-left: -15px;
-    margin-right: -15px;
-  }
+.skill img {
+  display: block;
+  margin: 0 auto;
+}
 
-  .projects .col-lg-4,
-  .projects .col-md-6 {
-    padding: 15px;
-  }
+.skill-title {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  /* color: #333; */
+}
 
+.projects .row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.projects .col-lg-4,
+.projects .col-md-6 {
+  padding: 15px;
+}
+
+.project {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.project img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project-details {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project:hover .project-details {
+  opacity: 1;
+}
+
+.project-title {
+  margin-top: 0;
+  font-size: 18px;
+  color: #eee;
+}
+
+.project-description {
+  margin-bottom: 0;
+  color: #fff;
+}
+
+#banner {
+  margin: 8rem 0;
+}
+
+/* Responsive Styling */
+
+@media screen and (max-width: 624px) {
+  #banner {
+    margin: 5rem 0;
+  }
+}
+
+@media (max-width: 991px) {
   .project {
-    margin-bottom: 30px;
-    position: relative;
-  }
-
-  .project img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+    margin-bottom: 20px;
   }
 
   .project-details {
-    background-color: #000;
-    color: #fff;
-    padding: 20px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-
-  .project:hover .project-details {
-    opacity: 1;
+    padding: 10px;
   }
 
   .project-title {
-    margin-top: 0;
-    font-size: 18px;
-    color: #eee;
+    font-size: 16px;
   }
 
   .project-description {
-    margin-bottom: 0;
-    color: #fff;
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 767px) {
+  .projects {
+    padding: 60px 0;
   }
 
-  #banner {
-    margin: 8rem 0;
+  .section-title {
+    margin-bottom: 40px;
   }
 
-  /* Responsive Styling */
-
-  @media screen and (max-width: 624px) {
-    #banner {
-      margin: 5rem 0;
-    }
+  .project {
+    margin-bottom: 15px;
   }
 
-  @media (max-width: 991px) {
-    .project {
-      margin-bottom: 20px;
-    }
-
-    .project-details {
-      padding: 10px;
-    }
-
-    .project-title {
-      font-size: 16px;
-    }
-
-    .project-description {
-      font-size: 12px;
-      margin-bottom: 5px;
-    }
+  .project-details {
+    padding: 10px;
   }
 
-  @media (max-width: 767px) {
-    .projects {
-      padding: 60px 0;
-    }
-
-    .section-title {
-      margin-bottom: 40px;
-    }
-
-    .project {
-      margin-bottom: 15px;
-    }
-
-    .project-details {
-      padding: 10px;
-    }
-
-    .project-title {
-      font-size: 14px;
-    }
-
-    .project-description {
-      font-size: 11px;
-      margin-bottom: 5px;
-    }
+  .project-title {
+    font-size: 14px;
   }
+
+  .project-description {
+    font-size: 11px;
+    margin-bottom: 5px;
+  }
+}
