@@ -1,6 +1,6 @@
 $(document).ready(function () {
     foo = $('#typewriter');
-    foo.typer(['HTML - CSS - JAVASCRIPT - JQUERY', 'PHP - MYSQL - LARAVEL']);
+    foo.typer(['HTML - CSS - JAVASCRIPT - JQUERY - REACT - NEXTJS', 'PHP - MYSQL - LARAVEL']);
     wow = new WOW(
         {
             animateClass: 'animated',
