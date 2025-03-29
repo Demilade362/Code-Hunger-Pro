@@ -10,7 +10,6 @@ body {
     min-height: 100vh;
 }
 
-/* Spinning Ball Animation */
 .spinning-ball {
     position: fixed;
     bottom: 20px;
@@ -24,7 +23,6 @@ body {
     box-shadow: 0 0 20px rgba(255, 204, 0, 0.7);
 }
 
-/* Define the spinning animation */
 @keyframes spin {
     0% {
         transform: rotate(0deg);
@@ -35,7 +33,7 @@ body {
     }
 }
 
-/* Added bounce animation */
+
 @keyframes bounce {
 
     0%,
@@ -48,7 +46,6 @@ body {
     }
 }
 
-/* Continuous Typewriter Effect */
 .typewriter-text {
     display: inline-block;
     overflow: hidden;
@@ -88,4 +85,22 @@ body {
     50% {
         border-color: #FFCC00
     }
+}
+
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #000;
+}
+
+body {
+    position: relative;
+}
+
+.spinning-ball {
+    z-index: 10;
 }

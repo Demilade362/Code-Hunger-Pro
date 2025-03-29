@@ -7,35 +7,11 @@
     <title>Abatan Oluwademilade</title>
     <link rel="stylesheet" href="./src/output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        /* Add this to your CSS */
-        #particles-js {
-            position: fixed;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            z-index: -1; /* Behind all content */
-            background-color: #000;
-        }
-        
-        /* Ensure content stays above particles */
-        body {
-            position: relative;
-        }
-        
-        /* Adjust spinning ball z-index */
-        .spinning-ball {
-            z-index: 10;
-        }
-    </style>
 </head>
 
 <body>
-    <!-- Particles Background Container -->
     <div id="particles-js"></div>
     
-    <!-- Your existing content -->
     <nav>
         <div class="container mx-auto px-5 py-2 flex">
             <div class="flex gap-10 items-center ml-auto">
@@ -103,7 +79,7 @@
                 </div>
             </div>
             <div class="justify-self-end">
-                <img src="https://avatars.githubusercontent.com/u/68753229?v=4" alt="me" class="rounded-full"
+                <img src="https://avatars.githubusercontent.com/u/68753229?v=4" alt="me" class="rounded-full border-2 border-yellow-400 p-3"
                     width="350" height="350">
             </div>
         </div>
@@ -111,10 +87,8 @@
         <p class="mt-10 text-end text-sm text-gray-400">Copyright © Oluwademilade Abatan</p>
     </section>
 
-    <!-- Spinning Ball at the bottom -->
     <div class="spinning-ball"></div>
 
-    <!-- Add these scripts before closing body tag -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
