@@ -11,23 +11,24 @@
 
 <body>
     <div id="particles-js"></div>
-    
+
     <nav>
-        <div class="container mx-auto px-5 py-2 flex">
+        <div class="container mx-auto px-5 py-2 flex fade-in">
             <div class="flex gap-10 items-center ml-auto">
                 <ul class="flex list-none items-center gap-5">
                     <li><a href="index.html"><span class="text-yellow-400">01.</span> About</a></li>
                     <li><a href="index.html"><span class="text-yellow-400">02.</span> Projects</a></li>
-                    <li><a href="https://github.com/Demilade362"><span class="text-yellow-400">03.</span> Github</a></li>
+                    <li><a href="https://github.com/Demilade362"><span class="text-yellow-400">03.</span> Github</a>
+                    </li>
                 </ul>
                 <a href="" class="bg-black border-2 border-yellow-400 py-2 px-4 rounded-lg">Resume</a>
             </div>
         </div>
     </nav>
-    
+
     <section class="container mx-auto px-5 mt-20">
         <div class="grid grid-cols-2 align-center">
-            <div>
+            <div class="fade-in">
                 <h6 class="text-yellow-400">Hi, my name is</h6>
                 <h1 class="text-6xl my-5">
                     Abatan Oluwademilade
@@ -79,19 +80,19 @@
                 </div>
             </div>
             <div class="justify-self-end">
-                <img src="https://avatars.githubusercontent.com/u/68753229?v=4" alt="me" class="rounded-full border-2 border-yellow-400 p-3"
-                    width="350" height="350">
+                <img src="https://avatars.githubusercontent.com/u/68753229?v=4" alt="me"
+                    class="rounded-full border-2 border-yellow-400 p-3" width="350" height="350">
             </div>
         </div>
 
-        <p class="mt-10 text-end text-sm text-gray-400">Copyright © Oluwademilade Abatan</p>
+        <p class="mt-10 text-end text-sm text-gray-400 fade-in">Copyright © Oluwademilade Abatan</p>
     </section>
 
     <div class="spinning-ball"></div>
 
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             particlesJS('particles-js', {
                 "particles": {
                     "number": {
@@ -146,6 +147,21 @@
                 }
             });
         });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const fadeElements = document.querySelectorAll('.fade-in');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            fadeElements.forEach(el => observer.observe(el));
+        });
     </script>
 </body>
+
 </html>
