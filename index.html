@@ -3,162 +3,175 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>&lt;CodeHunger/&gt;</title>
-    <link rel="icon" href="code-icon-png-0.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script defer src="js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/style.css">
+    <title>Abatan Oluwademilade</title>
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Add this to your CSS */
+        #particles-js {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1; /* Behind all content */
+            background-color: #000;
+        }
+        
+        /* Ensure content stays above particles */
+        body {
+            position: relative;
+        }
+        
+        /* Adjust spinning ball z-index */
+        .spinning-ball {
+            z-index: 10;
+        }
+    </style>
 </head>
 
-<body class="bg-light">
-    <main>
-        <nav class="navbar navbar-expand-md bg-white py-4 navbar-light">
-            <div class="container">
-                <a class="navbar-brand"
-                    href="index.html"><code>&lt;Code<span class="text-success">Hunger/&gt;</span></code></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navmenu"
-                    aria-controls="navmenu">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="navmenu">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title text-light">Menu</h5>
-                        <button type="button" class="btn-close bg-white text-reset" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav ms-auto">
-                            <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
-                            <li class="nav-item d-none d-lg-block"><a href="index.html#about" class="nav-link">About
-                                    Me</a></li>
-                            <li class="nav-item d-lg-none">
-                                <a href="projects.html" class="nav-link">Projects</a>
-                            </li>
-                            <li class="nav-item d-lg-none">
-                                <a href="https://github.com/Demilade362" class="nav-link">My Github</a>
-                            </li>
-                            <li class="nav-item d-lg-none">
-                                <a href="mailto:ademolademilade362@gmail.com" class="nav-link">Contact</a>
-                            </li>
-                            <li class="nav-item d-lg-block d-none"><a href="projects.html" class="nav-link">Projects</a>
-                            </li>
-                            <li class="nav-item d-lg-block d-none"><a href="https://github.com/Demilade362"
-                                    class="nav-link">My Github</a></li>
-                        </ul>
-
-                        <ul class="navbar-nav ms-auto">
-                            <li class="nav-item d-lg-block d-none"><a href="mailto:ademolademilade362@gmail.com"
-                                    class="btn btn-outline-success ms-2 mt-1 rounded">Say Hello👋</a></li>
-                        </ul>
-                    </div>
+<body>
+    <!-- Particles Background Container -->
+    <div id="particles-js"></div>
+    
+    <!-- Your existing content -->
+    <nav>
+        <div class="container mx-auto px-5 py-2 flex">
+            <div class="flex gap-10 items-center ml-auto">
+                <ul class="flex list-none items-center gap-5">
+                    <li><a href="index.html"><span class="text-yellow-400">01.</span> About</a></li>
+                    <li><a href="index.html"><span class="text-yellow-400">02.</span> Projects</a></li>
+                    <li><a href="https://github.com/Demilade362"><span class="text-yellow-400">03.</span> Github</a></li>
+                </ul>
+                <a href="" class="bg-black border-2 border-yellow-400 py-2 px-4 rounded-lg">Resume</a>
+            </div>
+        </div>
+    </nav>
+    
+    <section class="container mx-auto px-5 mt-20">
+        <div class="grid grid-cols-2 align-center">
+            <div>
+                <h6 class="text-yellow-400">Hi, my name is</h6>
+                <h1 class="text-6xl my-5">
+                    Abatan Oluwademilade
+                </h1>
+                <p class="text-4xl text-gray-400 typewriter-text">
+                    I build things for the web.
+                </p>
+                <p class="mt-4 text-sm text-gray-400">
+                    A passionate Software Engineer with expertise in both front-end and back-end development. I
+                    specialize in creating intuitive and responsive user interfaces using HTML, CSS, JavaScript, React,
+                    and TailwindCSS. On the backend, I have experience with PHP, Laravel, and MySQL, building robust and
+                    scalable applications. I'm always eager to explore new technologies, from AI to Web3, and aim to
+                    deliver innovative, efficient solutions. Let's connect and create something impactful together!
+                </p>
+                <!-- Social Media Links -->
+                <div class="mt-8">
+                    <ul class="flex gap-4">
+                        <li>
+                            <a href="https://github.com/Demilade362" target="_blank"
+                                class="text-gray-400 hover:text-yellow-400 transition-colors">
+                                <i class="fab fa-github text-2xl"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/yourusername" target="_blank"
+                                class="text-gray-400 hover:text-yellow-400 transition-colors">
+                                <i class="fab fa-twitter text-2xl"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://linkedin.com/in/yourusername" target="_blank"
+                                class="text-gray-400 hover:text-yellow-400 transition-colors">
+                                <i class="fab fa-linkedin-in text-2xl"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://instagram.com/yourusername" target="_blank"
+                                class="text-gray-400 hover:text-yellow-400 transition-colors">
+                                <i class="fab fa-instagram text-2xl"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:your@email.com"
+                                class="text-gray-400 hover:text-yellow-400 transition-colors">
+                                <i class="fas fa-envelope text-2xl"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </nav>
-        <div class="container">
-            <section class="row align-items-center justify-content-between p-5 text-center text-lg-start" id="banner">
-                <div class="col-lg-7 col-sm-12 wow fadeInUp">
-                    <h1 class="display-4">Hello, <span class="text-success">I'm Oluwademilade</span></h1>
-                    <p class="fwt-light">A Passionate Software Engineer</p>
-                    <div>
-                        <h5><span class="typewriter" id="typewriter" class="lead"></span></h5>
-                    </div>
-
-                    <div class="text-lg-start text-center mt-5">
-                        <a href="/images/my-cv.pdf" download="Oluwademilade-Abatan-CV" class="btn btn-outline-success">Download CV</a>
-                    </div>
-
-                </div>
-                <div class="col-lg-5 d-none d-lg-block text-center wow fadeInUp">
-                    <img src="https://avatars.githubusercontent.com/u/68753229?v=4" class="img-fluid rounded-circle"
-                        alt="Oluwademilade" width="250" height="250">
-                </div>
-            </section>
-
-            <!-- Rest of your content -->
-            <section class="container row align-items-center justify-content-center text-center"
-                style="margin-bottom: 10rem;">
-                <div class="col-lg-1 col-6 col-md-1 mb-5">
-                    <img src="./images/HTML5_Logo.svg" alt="HTML Logo" width="60">
-                </div>
-                <div class="col-lg-1 col-6 col-md-1 mb-5">
-                    <img src="./images/CSS3_logo_and_wordmark.svg" alt="CSS Logo" width="50">
-                </div>
-                <div class="col-lg-1 col-6 col-md-1 mb-5">
-                    <img src="./images/logo-javascript.svg" alt="JavaScript Logo" width="50">
-                </div>
-                <div class="col-lg-1 col-6 col-md-1 mb-5">
-
-                    <img src="./images/react-2.svg" alt="JavaScript Logo" width="50">
-                </div>
-                <div class="col-lg-1 col-6 col-md-1 mb-5">
-                    <img src="./images/jquery.svg" alt="JQuery Logo" width="50">
-                </div>
-                <div class="col-lg-1 col-6 col-md-1 mb-5">
-                    <img src="./images/next-js.svg" alt="JQuery Logo" width="50">
-                </div>
-                <div class="col-lg-1 col-6 col-md-1 mb-5">
-                    <img src="./images/php.svg" alt="PHP Logo" width="50">
-                </div>
-                <div class="col-lg-1 col-6 col-md-1 mb-5">
-                    <img src="./images/mysql.svg" alt="MySQL Logo" width="50">
-                </div>
-                <div class="col-lg-1 col-6 col-md-1 mb-5">
-                    <img src="./images/laravel.svg" alt="Laravel Logo" width="50">
-                </div>
-            </section>
-            <section class="container text-center my-5">
-                <h4 class="h2"> <span class="text-success">Cert</span>ifications</h4>
-                <div class="row my-5 align-items-center justify-content-around">
-                    <div class="col-lg-4">
-                        <div class="card mb-4 p-4">
-                            <img src="/images/cert1.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title">New Horizons Nigeria <br> - <br> Backend Development</h5>
-                            </div>
-                          </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="card mb-4 p-4">
-                            <img src="/images/cert2.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title">ALX Software Engineer <br> - <br> Frontend Engineering</h5>
-                            </div>
-                          </div>
-                    </div>
-                </div>
-            </section>
-            <section class="mb-5 p-lg-5 wow fadeInUp" id="about" style="margin-top: 10rem;">
-                <div class="container">
-                    <div class="h2 text-center">
-                        <span class="text-success">About</span> Me
-                    </div>
-                    <p class="my-5 text-center">
-                        My name is Oluwademilade Abatan Ademola, I am a Software Engineer.
-                        I was born on May 11th, 2004 in Lagos, Nigeria. My aim as a Software Engineer is to help
-                        companies create productive Software systems to change the world and make it a better place
-                        through technology.
-                    </p>
-                </div>
-            </section>
-        </div>
+            <div class="justify-self-end">
+                <img src="https://avatars.githubusercontent.com/u/68753229?v=4" alt="me" class="rounded-full"
+                    width="350" height="350">
+            </div>
         </div>
 
-        </div>
-    </main>
-    <footer class="mt-5 bg-white">
-        <div class="container text-center py-5">
-            copyright <span>&copy; <span id="date"></span> Oluwademilade Abatan</span>
-        </div>
-    </footer>
-    <script src="javascript/jquery.js"></script>
-    <script src="javascript/wow.js"></script>
-    <script src="./typer/jquery.typer.js"></script>
-    <script src="javascript/app.js"></script>
-    <script src="javascript/main.js"></script>
-    <script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.0.7/countUp.min.js"></script>
+        <p class="mt-10 text-end text-sm text-gray-400">Copyright © Oluwademilade Abatan</p>
+    </section>
+
+    <!-- Spinning Ball at the bottom -->
+    <div class="spinning-ball"></div>
+
+    <!-- Add these scripts before closing body tag -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            particlesJS('particles-js', {
+                "particles": {
+                    "number": {
+                        "value": 60,
+                        "density": {
+                            "enable": true,
+                            "value_area": 800
+                        }
+                    },
+                    "color": {
+                        "value": "#FFCC00"
+                    },
+                    "shape": {
+                        "type": "circle"
+                    },
+                    "opacity": {
+                        "value": 0.5,
+                        "random": true
+                    },
+                    "size": {
+                        "value": 3,
+                        "random": true
+                    },
+                    "line_linked": {
+                        "enable": true,
+                        "distance": 150,
+                        "color": "#FFCC00",
+                        "opacity": 0.4,
+                        "width": 1
+                    },
+                    "move": {
+                        "enable": true,
+                        "speed": 2,
+                        "direction": "none",
+                        "random": true,
+                        "straight": false,
+                        "out_mode": "out"
+                    }
+                },
+                "interactivity": {
+                    "detect_on": "canvas",
+                    "events": {
+                        "onhover": {
+                            "enable": true,
+                            "mode": "repulse"
+                        },
+                        "onclick": {
+                            "enable": true,
+                            "mode": "push"
+                        }
+                    }
+                }
+            });
+        });
+    </script>
 </body>
-
 </html>
