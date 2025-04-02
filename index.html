@@ -20,11 +20,12 @@
                     <i class="fas fa-bars text-2xl"></i>
                 </button>
             </div>
-            
+
             <!-- Desktop menu -->
             <div class="hidden md:flex gap-10 items-center ml-auto">
                 <ul class="flex list-none items-center gap-5">
-                    <li><a href="index.html" class="text-yellow-400"><span class="text-yellow-400 uppercase">01.</span> Home</a></li>
+                    <li><a href="index.html" class="text-yellow-400"><span class="text-yellow-400 uppercase">01.</span>
+                            Home</a></li>
                     <li><a href="project.html"><span class="text-yellow-400">02.</span> Projects</a></li>
                     <li><a href="https://github.com/Demilade362"><span class="text-yellow-400">03.</span> Github</a>
                     </li>
@@ -32,9 +33,10 @@
                 <a href="" class="bg-black border-2 border-yellow-400 py-2 px-4 rounded-lg">Resume</a>
             </div>
         </div>
-        
+
         <!-- Mobile offcanvas menu -->
-        <div id="mobile-menu" class="fixed inset-0 z-50 transform translate-x-full md:hidden transition-transform duration-300 ease-in-out bg-gray-900 bg-opacity-95">
+        <div id="mobile-menu"
+            class="fixed inset-0 z-50 transform translate-x-full md:hidden transition-transform duration-300 ease-in-out bg-gray-900 bg-opacity-95">
             <div class="flex justify-end p-5">
                 <button id="close-menu-button" class="text-yellow-400 focus:outline-none">
                     <i class="fas fa-times text-2xl"></i>
@@ -42,12 +44,17 @@
             </div>
             <div class="flex flex-col items-center justify-center h-full">
                 <ul class="flex flex-col list-none items-center gap-10 text-xl">
-                    <li><a href="index.html" class="text-yellow-400 hover:text-yellow-400"><span class="text-yellow-400 uppercase">01.</span> Home</a></li>
-                    <li><a href="project.html" class="hover:text-yellow-400"><span class="text-yellow-400">02.</span> Projects</a></li>
-                    <li><a href="https://github.com/Demilade362" class="hover:text-yellow-400"><span class="text-yellow-400">03.</span> Github</a></li>
-                    <li><a href="" class="bg-black border-2 border-yellow-400 py-2 px-4 rounded-lg hover:bg-yellow-400 hover:text-black transition-colors">Resume</a></li>
+                    <li><a href="index.html" class="text-yellow-400 hover:text-yellow-400"><span
+                                class="text-yellow-400 uppercase">01.</span> Home</a></li>
+                    <li><a href="project.html" class="hover:text-yellow-400"><span class="text-yellow-400">02.</span>
+                            Projects</a></li>
+                    <li><a href="https://github.com/Demilade362" class="hover:text-yellow-400"><span
+                                class="text-yellow-400">03.</span> Github</a></li>
+                    <li><a href=""
+                            class="bg-black border-2 border-yellow-400 py-2 px-4 rounded-lg hover:bg-yellow-400 hover:text-black transition-colors">Resume</a>
+                    </li>
                 </ul>
-                
+
                 <!-- Social Media Links in mobile menu -->
                 <div class="mt-16">
                     <ul class="flex gap-6">
@@ -87,7 +94,46 @@
         </div>
     </nav>
 
-    <section class="container mx-auto lg:px-20 mt-20">
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 sm:px-6 py-8 md:py-12 lg:py-16 block lg:hidden">
+        <div class="flex flex-col md:flex-row items-center">
+            <!-- Text Content -->
+            <div class="w-full md:w-1/2 text-center md:text-left mb-10 md:mb-0 md:pr-8 lg:pr-12 animate-fadeInUp">
+                <h6 class="text-yellow-400 text-lg md:text-xl mb-2">Hi, my name is,</h6>
+                <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 md:mb-6">
+                    Abatan Oluwademilade
+                </h1>
+                <h2 class="text-xl sm:text-2xl md:text-3xl text-gray-300 mb-6 md:mb-8">
+                    I build things for the web.
+                </h2>
+                <p class="text-gray-400 text-sm sm:text-base leading-relaxed mb-8 md:mb-10 max-w-lg mx-auto md:mx-0">
+                    A passionate Software Engineer with expertise in both front-end and back-end development.
+                    I specialize in creating intuitive and responsive user interfaces using modern technologies.
+                </p>
+            </div>
+
+            <!-- Image -->
+            <div class="w-full md:w-1/2 flex justify-center">
+                <div class="relative w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-72 lg:h-72">
+                    <img src="https://avatars.githubusercontent.com/u/68753229?v=4" alt="Abatan Oluwademilade"
+                        class="rounded-full border-2 border-yellow-400 w-full h-full object-cover shadow-lg">
+                    <div
+                        class="absolute inset-0 rounded-full border-4 border-transparent hover:border-yellow-400 transition-all duration-300">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="container mx-auto px-4 py-6 text-center">
+            <p class="text-gray-500 text-sm">
+                Copyright © <span id="current-year"></span> Oluwademilade Abatan
+            </p>
+        </footer>
+
+    </main>
+
+    <section class="container mx-auto lg:px-20 mt-20 hidden lg:block">
         <div class="grid grid-cols-2 align-center max-md:items-center max-md:justify-center max-md:grid-cols-1">
             <div class="fade-in falling-text text-center md:text-start">
                 <h6 class="text-yellow-400">Hi, my name is,</h6>
@@ -146,13 +192,16 @@
             </div>
         </div>
 
-        <p class="mt-10 text-end text-sm text-gray-400 fade-in mr-0 sm:mr-10">Copyright © Oluwademilade Abatan</p>
+        <p class="mt-10 text-end text-sm text-gray-400 fade-in mr-0 sm:mr-10">Copyright © <span
+                id="current-year-again"></span> Oluwademilade Abatan</p>
     </section>
 
     <div class="spinning-ball"></div>
 
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        document.getElementById('current-year-again').textContent = new Date().getFullYear();
         document.addEventListener('DOMContentLoaded', function () {
             particlesJS('particles-js', {
                 "particles": {
@@ -221,22 +270,22 @@
             }, { threshold: 0.1 });
 
             fadeElements.forEach(el => observer.observe(el));
-            
+
             // Mobile menu functionality
             const mobileMenuButton = document.getElementById('mobile-menu-button');
             const closeMenuButton = document.getElementById('close-menu-button');
             const mobileMenu = document.getElementById('mobile-menu');
-            
+
             mobileMenuButton.addEventListener('click', () => {
                 mobileMenu.classList.remove('translate-x-full');
                 mobileMenu.classList.add('translate-x-0');
             });
-            
+
             closeMenuButton.addEventListener('click', () => {
                 mobileMenu.classList.remove('translate-x-0');
                 mobileMenu.classList.add('translate-x-full');
             });
-            
+
             // Close menu when clicking on a link
             const menuLinks = mobileMenu.querySelectorAll('a');
             menuLinks.forEach(link => {
