@@ -14,9 +14,17 @@
 
     <nav>
         <div class="container mx-auto px-5 py-2 flex fade-in">
-            <div class="flex gap-10 items-center ml-auto">
+            <!-- Mobile menu button -->
+            <div class="md:hidden ml-auto">
+                <button id="mobile-menu-button" class="text-yellow-400 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            
+            <!-- Desktop menu -->
+            <div class="hidden md:flex gap-10 items-center ml-auto">
                 <ul class="flex list-none items-center gap-5">
-                    <li><a href="index.html"><span class="text-yellow-400">01.</span> About</a></li>
+                    <li><a href="index.html"><span class="text-yellow-400 uppercase">01.</span> About</a></li>
                     <li><a href="index.html"><span class="text-yellow-400">02.</span> Projects</a></li>
                     <li><a href="https://github.com/Demilade362"><span class="text-yellow-400">03.</span> Github</a>
                     </li>
@@ -24,16 +32,69 @@
                 <a href="" class="bg-black border-2 border-yellow-400 py-2 px-4 rounded-lg">Resume</a>
             </div>
         </div>
+        
+        <!-- Mobile offcanvas menu -->
+        <div id="mobile-menu" class="fixed inset-0 z-50 transform translate-x-full md:hidden transition-transform duration-300 ease-in-out bg-gray-900 bg-opacity-95">
+            <div class="flex justify-end p-5">
+                <button id="close-menu-button" class="text-yellow-400 focus:outline-none">
+                    <i class="fas fa-times text-2xl"></i>
+                </button>
+            </div>
+            <div class="flex flex-col items-center justify-center h-full">
+                <ul class="flex flex-col list-none items-center gap-10 text-xl">
+                    <li><a href="index.html" class="hover:text-yellow-400"><span class="text-yellow-400 uppercase">01.</span> About</a></li>
+                    <li><a href="index.html" class="hover:text-yellow-400"><span class="text-yellow-400">02.</span> Projects</a></li>
+                    <li><a href="https://github.com/Demilade362" class="hover:text-yellow-400"><span class="text-yellow-400">03.</span> Github</a></li>
+                    <li><a href="" class="bg-black border-2 border-yellow-400 py-2 px-4 rounded-lg hover:bg-yellow-400 hover:text-black transition-colors">Resume</a></li>
+                </ul>
+                
+                <!-- Social Media Links in mobile menu -->
+                <div class="mt-16">
+                    <ul class="flex gap-6">
+                        <li>
+                            <a href="https://github.com/Demilade362" target="_blank"
+                                class="text-gray-400 hover:text-yellow-400 transition-colors">
+                                <i class="fab fa-github text-2xl"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/yourusername" target="_blank"
+                                class="text-gray-400 hover:text-yellow-400 transition-colors">
+                                <i class="fab fa-twitter text-2xl"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://linkedin.com/in/yourusername" target="_blank"
+                                class="text-gray-400 hover:text-yellow-400 transition-colors">
+                                <i class="fab fa-linkedin-in text-2xl"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://instagram.com/yourusername" target="_blank"
+                                class="text-gray-400 hover:text-yellow-400 transition-colors">
+                                <i class="fab fa-instagram text-2xl"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:your@email.com"
+                                class="text-gray-400 hover:text-yellow-400 transition-colors">
+                                <i class="fas fa-envelope text-2xl"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </nav>
 
     <section class="container mx-auto lg:px-20 mt-20">
-        <div class="grid grid-cols-2 align-center">
-            <div class="fade-in falling-text">
+        <div class="grid grid-cols-2 align-center max-md:items-center max-md:justify-center max-md:grid-cols-1">
+            <div class="fade-in falling-text text-center md:text-start">
                 <h6 class="text-yellow-400">Hi, my name is,</h6>
-                <h1 class="text-6xl my-5">
+                <h1 class="text-2xl lg:text-6xl my-5">
                     Abatan Oluwademilade
                 </h1>
-                <p class="text-4xl text-gray-400 typewriter-text">
+                <p class="text-xl lg:text-4xl text-gray-400 typewriter-text">
                     I build things for the web.
                 </p>
                 <p class="mt-4 text-sm text-gray-400 pl-3 border-l-4 border-yellow-400">
@@ -44,7 +105,7 @@
                     deliver innovative, efficient solutions. Let's connect and create something impactful together!
                 </p>
                 <!-- Social Media Links -->
-                <div class="mt-8">
+                <div class="mt-8 hidden md:block">
                     <ul class="flex gap-4">
                         <li>
                             <a href="https://github.com/Demilade362" target="_blank"
@@ -79,13 +140,13 @@
                     </ul>
                 </div>
             </div>
-            <div class="justify-self-end">
+            <div class="justify-self-end hidden md:block">
                 <img src="https://avatars.githubusercontent.com/u/68753229?v=4" alt="me"
-                    class="rounded-full border-2 border-yellow-400 p-3" width="350" height="350">
+                    class="rounded-full border-2 border-yellow-400 p-3 md:w-70" width="350" height="350">
             </div>
         </div>
 
-        <p class="mt-10 text-end text-sm text-gray-400 fade-in">Copyright © Oluwademilade Abatan</p>
+        <p class="mt-10 text-end text-sm text-gray-400 fade-in mr-0 sm:mr-10">Copyright © Oluwademilade Abatan</p>
     </section>
 
     <div class="spinning-ball"></div>
@@ -160,6 +221,30 @@
             }, { threshold: 0.1 });
 
             fadeElements.forEach(el => observer.observe(el));
+            
+            // Mobile menu functionality
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const closeMenuButton = document.getElementById('close-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.remove('translate-x-full');
+                mobileMenu.classList.add('translate-x-0');
+            });
+            
+            closeMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.remove('translate-x-0');
+                mobileMenu.classList.add('translate-x-full');
+            });
+            
+            // Close menu when clicking on a link
+            const menuLinks = mobileMenu.querySelectorAll('a');
+            menuLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.remove('translate-x-0');
+                    mobileMenu.classList.add('translate-x-full');
+                });
+            });
         });
     </script>
 </body>
