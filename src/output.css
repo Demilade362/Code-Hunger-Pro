@@ -488,6 +488,9 @@
   .w-1\/2 {
     width: calc(1/2 * 100%);
   }
+  .w-100 {
+    width: calc(var(--spacing) * 100);
+  }
   .w-screen {
     width: 100vw;
   }
@@ -2045,6 +2048,21 @@
   .lg\:block {
     @media (width >= 64rem) {
       display: block;
+    }
+  }
+  .lg\:w-80 {
+    @media (width >= 64rem) {
+      width: calc(var(--spacing) * 80);
+    }
+  }
+  .lg\:w-90 {
+    @media (width >= 64rem) {
+      width: calc(var(--spacing) * 90);
+    }
+  }
+  .lg\:w-100 {
+    @media (width >= 64rem) {
+      width: calc(var(--spacing) * 100);
     }
   }
   .lg\:px-20 {
