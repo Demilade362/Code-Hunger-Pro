@@ -367,6 +367,12 @@
   .my-16 {
     margin-block: calc(var(--spacing) * 16);
   }
+  .my-20 {
+    margin-block: calc(var(--spacing) * 20);
+  }
+  .my-26 {
+    margin-block: calc(var(--spacing) * 26);
+  }
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
   }
